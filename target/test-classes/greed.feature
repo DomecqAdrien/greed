@@ -18,6 +18,12 @@ Feature: greed
 		Then I should get 800 points
 		And I could be able to replay
 		
+	Scenario: roll of four dices four fives
+    Given I roll the dices and get 5,5,5,5
+		When I save all my dices
+		Then I should get 1000 points
+		And I could be able to replay
+		
 	Scenario: roll of five dices five five
     Given I roll the dices and get 5,5,5,5,5
 		When I save all my dices
